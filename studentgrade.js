@@ -12,14 +12,17 @@
       return 'E';
     }
   }
+  //generating the prompt
   
   function studentGradeGenerator() {
-    const marks = parseFloat(prompt('Enter the student marks (0-100):'));
+    const marks = parseFloat(prompt('Enter the student marks (0-100):')); //floating poin number
   
     if (isNaN(marks) || marks < 0 || marks > 100) {
       return 'Invalid input. Please enter a valid marks between 0 and 100.';
     }
   
+
+
     const grade = studentGrade(marks);
     return `The students grade is: ${grade}`;
   }
