@@ -44,7 +44,7 @@ Go to your terminal and git clone the copied url in the folder of your choice th
 Running the first challenge(studentgrade.js)
 
 Go to the index.html file and go live.You will be prompted to enter the student marks then press enter.
-Go ahead and press ctrl + shift + j to see the result.
+Go ahead and press ctrl + shift + j to see the result. You can also click on the url below about on my repository.
 
 for the rest of the challenges just press the run button at the top right of the vs code to see the output
 
