@@ -4,8 +4,6 @@ const maxPoints = 12;
 
 
 function speedGauge(speed) {
-let speed = prompt("Enter speed of car:")
-
     if (speed <= speedLimit ) {
         return "Ok"
         //giving demerit points for every 5 km/s above speedLimit
