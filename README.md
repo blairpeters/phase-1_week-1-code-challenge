@@ -36,8 +36,8 @@ Your computer should have visual studio  and node js installed.
 
 //installation
 
-Got to my repository and fork the project the go to code and under clone copy the ssh url provided.
-Go to your terminal and git clone the copied url in the folder of your choice then open vs code in the cloned directory using code . 
+Got to my repository and fork the project then go to code and under clone copy the ssh key provided.
+Go to your terminal and git clone the copied ssh key in the folder of your choice then open vs code in the cloned directory using code . 
 
 //Running the application
 
@@ -47,6 +47,8 @@ Go to the index.html file and go live.You will be prompted to enter the student 
 Go ahead and press ctrl + shift + j to see the result. You can also click on the url below about on my repository.
 
 for the rest of the challenges just press the run button at the top right of the vs code to see the output
+
+you can also copy the code and paste it to the google chrome console the call the function.
 
 //Author
 
