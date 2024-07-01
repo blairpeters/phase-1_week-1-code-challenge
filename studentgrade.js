@@ -31,11 +31,11 @@
   
 
 
-    const grade = studentGrade(marks);
+    const grade = studentGrade(marks)
     return `The students grade is: ${grade}`;
   }
   
   
   const result = studentGradeGenerator();
-  console.log(result);
+  alert(result);
   

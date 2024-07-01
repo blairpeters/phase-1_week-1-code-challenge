@@ -4,6 +4,7 @@ const maxPoints = 12;
 
 
 function speedGauge(speed) {
+let speed = prompt("Enter speed of car:")
 
     if (speed <= speedLimit ) {
         return "Ok"
