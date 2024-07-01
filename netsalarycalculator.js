@@ -1,105 +1,74 @@
-function payee(amount) {
-    const monthlyTaxablePay = amount;
-    if (monthlyTaxablePay <= 24000) {
-        return `payee is ${monthlyTaxablePay * 0.1}` 
+function taxCalculator(monthlyTaxablePay) {
+  let grossPayMinusTax;
+  if (monthlyTaxablePay <= 24000) {
+    return (grossPayMinusTax = monthlyTaxablePay * 0.9);
+  } else if (monthlyTaxablePay > 24000 && monthlyTaxablePay <= 32333) {
+    return (grossPayMinusTax = monthlyTaxablePay * 0.75);
+  } else if (monthlyTaxablePay > 32333 && monthlyTaxablePay <= 500000) {
+    return (grossPayMinusTax = monthlyTaxablePay * 0.7);
+  } else if (monthlyTaxablePay > 500000 && monthlyTaxablePay <= 800000) {
+    return (grossPayMinusTax = monthlyTaxablePay * 0.67);
+  } else if (monthlyTaxablePay > 800000) {
+    return (grossPayMinusTax = monthlyTaxablePay * 0.65);
+  }
 
-    }else if (monthlyTaxablePay > 24000 && monthlyTaxablePay <= 32333) {
-        return `payee is ${monthlyTaxablePay * 0.25}` 
+  //console.log(payee(500000));
 
-    }else if (monthlyTaxablePay > 32333 && monthlyTaxablePay <= 500000) {
-        return `payee is ${monthlyTaxablePay * 0.3}` 
+  //NHIF CALCULATOR
 
-    }else if (monthlyTaxablePay > 500000 && monthlyTaxablePay <= 800000) {
-        return `payee is ${monthlyTaxablePay * 0.325}` 
-
-    }else if (monthlyTaxablePay > 800000) {
-        return `payee is ${monthlyTaxablePay * 0.35}` 
-
+  function nhif() {
+    if (grossPayMinusTax <= 5999) {
+      return "nhif_deduction  is " + 150;
+    } else if (grossPayMinusTax > 5999 && grossPayMinusTax <= 7999) {
+      return "nhif_deduction  is " + 300;
+    } else if (grossPayMinusTax > 799 && grossPayMinusTax <= 11999) {
+      return "nhif_deduction  is " + 400;
+    } else if (grossPayMinusTax > 11999 && grossPayMinusTax <= 14999) {
+      return "nhif_deduction  is " + 500;
+    } else if (grossPayMinusTax > 14999 && grossPayMinusTax <= 19999) {
+      return "nhif_deduction  is " + 600;
+    } else if (grossPayMinusTax > 19999 && grossPayMinusTax <= 24999) {
+      return "nhif_deduction  is " + 750;
+    } else if (grossPayMinusTax > 24999 && grossPayMinusTax <= 29999) {
+      return "nhif_deduction  is " + 850;
+    } else if (grossPayMinusTax > 29999 && grossPayMinusTax <= 34999) {
+      return "nhif_deduction  is " + 900;
+    } else if (grossPayMinusTax > 34999 && grossPayMinusTax <= 39999) {
+      return "nhif_deduction  is " + 950;
+    } else if (grossPayMinusTax > 39999 && grossPayMinusTax <= 44999) {
+      return "nhif_deduction  is " + 100;
+    } else if (grossPayMinusTax > 44999 && grossPayMinusTax <= 49999) {
+      return "nhif_deduction  is " + 110;
+    } else if (grossPayMinusTax > 49999 && grossPayMinusTax <= 59999) {
+      return "nhif_deduction  is " + 120;
+    } else if (grossPayMinusTax > 59999 && grossPayMinusTax <= 69999) {
+      return "nhif_deduction  is " + 130;
+    } else if (grossPayMinusTax > 69999 && grossPayMinusTax <= 79999) {
+      return "nhif_deduction  is " + 140;
+    } else if (grossPayMinusTax > 79999 && grossPayMinusTax <= 89999) {
+      return "nhif_deduction  is " + 150;
+    } else if (grossPayMinusTax > 89999 && grossPayMinusTax <= 99999) {
+      return "nhif_deduction  is " + 160;
+    } else if (grossPayMinusTax >= 100000) {
+      return "nhif_deduction  is " + 170;
     }
-}
-console.log(payee(500000));
+  }
+  //
 
-//NHIF CALCULATOR
-
-function nhif(nhif_amount) {
-    const grossPay = nhif_amount;
-    if (grossPay <= 5999) {
-        return "nhif_deduction  is " + 150 
-
-    }else if (grossPay > 5999 && grossPay <= 7999) {
-        return "nhif_deduction  is " + 300 
-
-    }else if (grossPay > 799 && grossPay <= 11999) {
-        return "nhif_deduction  is " + 400 
-
-    }else if (grossPay > 11999 && grossPay <= 14999) {
-        return "nhif_deduction  is " + 500 
-
-    }else if (grossPay > 14999 && grossPay <= 19999) {
-            return "nhif_deduction  is " + 600 
-    
-        }else if (grossPay > 19999 && grossPay <= 24999) {
-            return "nhif_deduction  is " + 750 
-    
-        }else if (grossPay > 24999 && grossPay <= 29999) {
-            return "nhif_deduction  is " + 850 
-    
-        }else if (grossPay > 29999 && grossPay <= 34999) {
-            return "nhif_deduction  is " + 900 
-    
-        }else if (grossPay > 34999 && grossPay <= 39999) {
-            return "nhif_deduction  is " + 950 
-    
-        }else if (grossPay > 39999 && grossPay <= 44999) {
-            return "nhif_deduction  is " + 100 
-    
-        }else if (grossPay > 44999 && grossPay <= 49999) {
-                return "nhif_deduction  is " + 110 
-        
-            }else if (grossPay > 49999 && grossPay <= 59999) {
-                return "nhif_deduction  is " + 120 
-        
-            }else if (grossPay > 59999 && grossPay <= 69999) {
-                return "nhif_deduction  is " + 130 
-        
-            }else if (grossPay > 69999 && grossPay <= 79999) {
-                return "nhif_deduction  is " + 140 
-        
-            }else if (grossPay > 79999 && grossPay <= 89999) {
-                return "nhif_deduction  is " + 150 
-        
-            }else if (grossPay > 89999 && grossPay <= 99999) {
-                    return "nhif_deduction  is " + 160 
-        
-            
-                }else if (grossPay >= 100000) {
-                    return "nhif_deduction  is " + 170 
-            
-                }  
-        
-}
-console.log(nhif(120000));
-
-
-function nssf(nssf_amount) {
+  function nssf(nssf_amount) {
     const pensionablePay = nssf_amount;
     if (pensionablePay <= 7000) {
-        return `pensionable pay  is ${pensionablePay * 0.12}` 
-
-    }else if (pensionablePay > 7000 && pensionablePay <= 36000) {
-        return `pensionable pay is  ${pensionablePay * 0.12}` 
+      return `pensionable pay  is ${pensionablePay * 0.12}`;
+    } else if (pensionablePay > 7000 && pensionablePay <= 36000) {
+      return `pensionable pay is  ${pensionablePay * 0.12}`;
     }
-}
-console.log(nssf(29000))
+  }
+  //console.log(nssf(29000));
 
-function housingLevy(housingLevyAmount) {
+  function housingLevy(housingLevyAmount) {
     const basicSalary = housingLevyAmount;
-    return `housing levy deduction is ${basicSalary * 0.03}`
+    return `housing levy deduction is ${basicSalary * 0.03}`;
+  }
+  // console.log(housingLevy(100000));
 }
-console.log(housingLevy(100000))
-
-
-    
-
-
-
+taxCalculator();
