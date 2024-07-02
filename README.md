@@ -1,45 +1,44 @@
+# Title assignment - // TOY PROBLEM PREREQUISITES.
 
-
-//Title assignment  -  // TOY PROBLEM PREREQUISITES.
-
-
-//Assignment description:
+## Assignment description:
 
 consists of the following challenges:
 
-Challenge 1: Student Grade Generator (Toy Problem) under (studentgrade.js file)
+**Challenge 1: Student Grade Generator (Toy Problem) under (studentgrade.js file)**
 
-consists of a function that prompts the user to input student marks. The input hasto  be between 0 and 100. The output should correspond the correct grade, as shown below: 
+consists of a function that prompts the user to input student marks. The input hasto be between 0 and 100. The output should correspond the correct grade, as shown below:
 
         A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
 
         if output is not between 0 and 100 it returns  "Invalid input. Please enter a valid marks between 0 and 100."
 
- 
-Challenge 2: Speed Detector (Toy Problem) under (speeddetector.js file)
+**Challenge 2: Speed Detector (Toy Problem) under (speeddetector.js file)**
 
 Write a program that takes the speed of a car as input e.g 80. If the speed is less than 70, it should print “Ok”. Otherwise, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
 
-   > For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.
+> For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.
 
- 
+**Challenge 3: Net Salary Calculator (Toy Problem) under (netsalarycalculator.js file)**
 
-Challenge 3: Net Salary Calculator (Toy Problem) under (netsalarycalculator.js file)
+Write a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary.
 
-Write a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary. 
-# toy-problem-prerequisites
-# phase-1_week-1-code-challenge
+## system requirements
 
-//prerequisites:blairpeters/phase-1_week-1-code-challenge 
+- Node 18+
+- A browser capable of running javascript (chrome, firefox).
+- Operating system(Windows 10+, Macos, Linux, etc)
+- A text editor capable of running javascript(vs code, Nano, Atom,etc)
+- RAM space >= 4GB
+- Disk space >= 1GB
 
-Your computer should have visual studio  and node js installed.
+## installation
 
-//installation
+1. Open your terminal/cli on your computer.
+2. Clone the repository by running the following command:
 
-Got to my repository and fork the project then go to code and under clone copy the ssh key provided.
-Go to your terminal and git clone the copied ssh key in the folder of your choice then open vs code in the cloned directory using code . 
+`git clone https://github.com/blairpeters/toy-problem-prerequisites.git`
 
-//Running the application
+## Running the application
 
 Running the first challenge(studentgrade.js)
 
@@ -48,10 +47,10 @@ Go ahead and press ctrl + shift + j to see the result. You can also click on the
 
 for the rest of the challenges just press the run button at the top right of the vs code to see the output
 
-you can also copy the code and paste it to the google chrome console the call the function.
+you can also copy the code and paste it to the google chrome console then call the function.
+i.e for the netsalarycalculator.js copy the code to your console and call taxcalculator(grosspayExample)
 
-//Author
+## Author
 
-This project was done by Tony Blair Maina. 
- https://github.com/blairpeters
-
+This project was done by Tony Blair Maina.
+https://github.com/blairpeters

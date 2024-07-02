@@ -1,5 +1,4 @@
 function taxCalculator(monthlyTaxablePay) {
-  let grossPayMinusTax;
   if (monthlyTaxablePay <= 24000) {
     return (grossPayMinusTax = monthlyTaxablePay * 0.9);
   } else if (monthlyTaxablePay > 24000 && monthlyTaxablePay <= 32333) {
@@ -53,7 +52,7 @@ function taxCalculator(monthlyTaxablePay) {
       return "nhif_deduction  is " + 170;
     }
   }
-  //
+  nhif();
 
   function nssf(nssf_amount) {
     const pensionablePay = nssf_amount;
