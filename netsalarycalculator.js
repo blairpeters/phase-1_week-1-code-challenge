@@ -1,4 +1,6 @@
+//function to calculate salary that remains after payee is cut.
 function taxCalculator(monthlyTaxablePay) {
+  let grossPayMinusTax;
   if (monthlyTaxablePay <= 24000) {
     return (grossPayMinusTax = monthlyTaxablePay * 0.9);
   } else if (monthlyTaxablePay > 24000 && monthlyTaxablePay <= 32333) {
@@ -11,9 +13,7 @@ function taxCalculator(monthlyTaxablePay) {
     return (grossPayMinusTax = monthlyTaxablePay * 0.65);
   }
 
-  //console.log(payee(500000));
-
-  //NHIF CALCULATOR
+  //function to calculate the amount remaining after nhif cut.
 
   function nhif() {
     if (grossPayMinusTax <= 5999) {
@@ -53,6 +53,7 @@ function taxCalculator(monthlyTaxablePay) {
     }
   }
   nhif();
+  //function to calculate the amount remaining after nssf cut
 
   function nssf(nssf_amount) {
     const pensionablePay = nssf_amount;
@@ -62,12 +63,5 @@ function taxCalculator(monthlyTaxablePay) {
       return `pensionable pay is  ${pensionablePay * 0.12}`;
     }
   }
-  //console.log(nssf(29000));
-
-  function housingLevy(housingLevyAmount) {
-    const basicSalary = housingLevyAmount;
-    return `housing levy deduction is ${basicSalary * 0.03}`;
-  }
-  // console.log(housingLevy(100000));
 }
 taxCalculator();
