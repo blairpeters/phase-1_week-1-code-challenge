@@ -12,7 +12,7 @@ function speedGauge() {
   if (speed <= speedLimit) {
     alert("Ok");
     //giving demerit points for every 5 km/s above speedLimit
-  } else demeritPoints = speed - speedLimit;
+  } else demeritPoints = (speed - speedLimit) / 5;
 
   //license suspension
 
@@ -22,3 +22,4 @@ function speedGauge() {
     alert(`points: ${demeritPoints}`);
   }
 }
+speedGauge();
