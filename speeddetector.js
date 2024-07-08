@@ -4,7 +4,7 @@ const maxPoints = 12;
 
 function speedGauge() {
   let speed = prompt("Enter speed of car"); //prompts the user to key in speed of car.
-  if (isNaN(speed)) {
+  if (isNaN(speed) || speed < 0) {
     alert("Error!! Enter a valid speed!"); //alerts the user when the value keyed in is not a number
     return;
   }
