@@ -22,4 +22,3 @@ function speedGauge() {
     alert(`points: ${demeritPoints}`);
   }
 }
-speedGauge();
