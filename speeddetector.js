@@ -2,28 +2,23 @@ const speedLimit = 70;
 const demeritPointsInterval = 5;
 const maxPoints = 12;
 
+function speedGauge() {
+  let speed = prompt("Enter speed of car"); //prompts the user to key in speed of car.
+  if (isNaN(speed)) {
+    alert("Error!! Enter a valid speed!"); //alerts the user when the value keyed in is not a number
+    return;
+  }
 
-function speedGauge(speed) {
-    if (speed <= speedLimit ) {
-        return "Ok"
-        //giving demerit points for every 5 km/s above speedLimit
+  if (speed <= speedLimit) {
+    alert("Ok");
+    //giving demerit points for every 5 km/s above speedLimit
+  } else demeritPoints = speed - speedLimit;
 
-    }else( demeritPoints = (speed - speedLimit)) 
+  //license suspension
 
-    //license suspension
-       
-
-    if (demeritPoints > maxPoints) {
-            return "License suspended"
-        
-
-    }else{
-    return `points: ${demeritPoints}`
-    }
-
+  if (demeritPoints > maxPoints) {
+    alert("License suspended");
+  } else {
+    alert(`points: ${demeritPoints}`);
+  }
 }
-
-//examples
-console.log(speedGauge(80));
-console.log(speedGauge(100));
-
